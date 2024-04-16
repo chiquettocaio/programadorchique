@@ -1,0 +1,40 @@
+html, body {
+  height: 100%;
+  font-family: monospace;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(240, 232, 163);
+}
+
+h1 {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  border-right: 2px solid rgb(38, 46, 68);
+}
+
+.typewriter-animation {
+  animation:
+    typing 3s steps(24) forwards,
+    blink-caret .75s 3s step-end infinite,
+    erase 1s 4.3s steps(24) forwards;
+}
+
+@keyframes typing {
+  0% { width: 0; }
+  100% { width: 345px }
+}
+
+@keyframes erase {
+  from { width: 345px }
+  to { width: 0 }
+}
+
+@keyframes blink-caret {
+  0%, 100% { border-color: transparent }
+  50% { border-color: rgb(38, 46, 68) }
+}

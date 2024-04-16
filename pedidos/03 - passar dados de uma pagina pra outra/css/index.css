@@ -1,0 +1,70 @@
+:root {
+  --font-family: sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-family);
+  background-color: rgb(249, 249, 249);
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 100;
+  margin-bottom: 30px;
+}
+
+h2 > span:empty::before {
+  content: '______';
+}
+
+form {
+  width: 500px;
+  padding: 10px 20px;
+}
+
+form > div.form-control {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+form > button {
+  width: 100%;
+  margin-top: 10px;
+  height: 30px;
+  cursor: pointer;
+}
+
+div.form-control > label {
+  font-size: 1.6rem;
+  font-weight: 100;
+  margin-bottom: 5px;
+}
+
+div.form-control > input {
+  height: 30px;
+  font-size: 1.6rem;
+  font-weight: 100;
+  padding: 0 10px;
+  border: 1px solid #CCC;
+  border-radius: 4px;
+}

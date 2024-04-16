@@ -1,0 +1,125 @@
+:root {
+  --purple1: #9583ec;
+  --purple2: #4d5cc0;
+  --pink: #ebb6d3;
+  --white1: #FFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  /* scroll-behavior: smooth; */
+  /* scroll-padding: 50px; */
+}
+
+html {
+  height: 100%;
+  overflow:auto;
+}
+
+body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: var(--purple1);
+  height: 100px;
+  overflow: hidden;
+  padding: 0 40px 0 20px;
+}
+
+header > .content {
+  flex-direction: row;
+}
+
+.logo {
+  width: 100%;
+  max-width: 115px;
+  border-radius: 50%;
+}
+
+nav {
+  margin-left: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 0 50px;
+}
+
+nav li {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+nav a {
+  padding: 10px;
+  text-decoration: none;
+  color: var(--white1);
+  transition: background-color .2s;
+  border-radius: 4px;
+}
+
+nav a:hover {
+  background-color: var(--purple2);
+}
+
+section {
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  text-align: justify;
+  line-height: 3rem;
+  font-size: 2rem;
+  padding: 20px 40px;
+  height: 100vh;
+}
+
+section:nth-child(odd) {
+  background: var(--pink);
+}
+
+section:nth-child(even) {
+  background: var(--purple1);
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 500;
+  align-self: flex-start;
+  margin-bottom: 30px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: transparent;
+}
+
+footer {
+  height: 50px;
+  font-size: 1.7rem;
+  font-weight: 300;
+  color: var(--white1);
+  background-color: var(--purple2);
+}
+
+footer > .content {
+  padding: 15px 0;
+}

@@ -1,0 +1,14 @@
+.target {
+  width: 200px;
+  height: 200px;
+  background: blue;
+  color: #FFF;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: bold;
+}

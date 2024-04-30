@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+.min-h-96vh {
+  min-height: 96vh;
+}
+
+.toggle-sidebar-state {
+  cursor: pointer;
+}
+
+.sidebar-hidden .sidebar-item  {
+  gap: 0.75rem 0;
+}
+
+.sidebar-hidden .sidebar-item .item-content {
+  display: none;
+}
+
+.sidebar-js {
+  transition: width .4s;
+  overflow: hidden;
+}
+
+.toggle-sidebar-state {
+  min-width: 48px;
+}
+
+.item-content {
+  white-space: nowrap;
+}
